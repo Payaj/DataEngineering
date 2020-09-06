@@ -1,1 +1,1 @@
-# DataEngineering
+This repository contains projects that deals data extraction, normalization, cleaning, and transformation. Also includes but not limited to data pipelines, assigning ids, and cloud artichitechture projects. 
