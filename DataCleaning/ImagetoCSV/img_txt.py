@@ -29,9 +29,9 @@ def img_txt(image):
     return txt
 
 
-input_path = "/Users/EricSirinian/Downloads/img_test"
-output_path = "/Users/EricSirinian/Downloads/img_test"
-files = os.listdir("/Users/EricSirinian/Downloads/img_test")
+input_path = "/Users/payaj/Downloads/img_test"
+output_path = "/Users/payaj/Downloads/img_test"
+files = os.listdir("/Users/payaj/Downloads/img_test")
 
 
 os.chdir(input_path)
@@ -61,7 +61,7 @@ for i in range(0, len(files)):
 
     args = ID, Presenter, ReturnTo
 
-    with open('/Users/EricSirinian/Downloads/test_.csv', 'a') as outfile:
+    with open('/Users/payaj/Downloads/test_.csv', 'a') as outfile:
         writer = csv.writer(outfile)
         if i == start:
             writer.writerow(
