@@ -37,7 +37,6 @@ files = os.listdir("/Users/payaj/Downloads/img_test")
 os.chdir(input_path)
 
 output = []
-start = 2415
 for i in range(0, len(files)):
     print(files[i])
     img = PI.open(files[i])
@@ -55,7 +54,7 @@ for i in range(0, len(files)):
     ID = ''
     Presenter = ''
     ReturnTo = ''
-    ID = str(files[i][:16]) + 'TA'
+    ID = str(files[i][:16]) + 'P'
     Presenter = img_txt(img_presenter)
     ReturnTo = img_txt(img_return_to)
 
@@ -63,7 +62,7 @@ for i in range(0, len(files)):
 
     with open('/Users/payaj/Downloads/test_.csv', 'a') as outfile:
         writer = csv.writer(outfile)
-        if i == start:
+        if i == 0:
             writer.writerow(
                 ['ID', 'Presenter', 'ReturnTo'])
         # writer.writerow(args)
