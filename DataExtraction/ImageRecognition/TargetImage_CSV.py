@@ -30,9 +30,9 @@ pytesseract.pytesseract.tesseract_cmd = r'/usr/local/Cellar/tesseract/4.0.0_1/bi
 
 
 def browser_setting(proxy_new, path_to_driver):
-    proxy = {'address': proxy_new + '.proxymesh.com:31280',
-             'username': 'topagenets',
-             'password': 'Topagents1'}
+    proxy = {'address': 'XXXX',
+             'username': 'XXXX',
+             'password': 'XXXX'}
 
     capabilities = dict(DesiredCapabilities.CHROME)
     capabilities['proxy'] = {'proxyType': 'MANUAL',
@@ -85,12 +85,7 @@ def ocr(path_to_doc_img):
     return text
 
 
-headers = {'User-agent': 'Mozilla/5.0 (iPhone; U; CPU like Mac OS X; en) AppleWebKit/420+ '
-                         '(KHTML, like Gecko) Version/3.0 Mobile/1A543a Safari/419.3'}
-proxies = {'http': 'http://topagenets:Trustscout1@us.proxymesh.com:31280',
-           'https': 'http://topagenets:Trustscout1@us.proxymesh.com:31280'}
 path_to_chrome_driver = '/Users/payaj/chromedriver'
-available_proxies = ['us-ny', 'us-fl', 'us-wa', 'de', 'us-dc', 'us-ca', 'au', 'nl', 'sg', 'uk', 'us']
 
 browser = browser_setting(proxy_new=available_proxies[-1], path_to_driver=path_to_chrome_driver)
 
